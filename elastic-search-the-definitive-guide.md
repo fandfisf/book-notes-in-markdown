@@ -23,6 +23,7 @@ Have **no idea** what this is yet!
 * The document lives inside an _index_
 * The index lives inside a _cluster_
 * Standard HTTP verbs are used (`PUT` in this case)
+
 ###Finding data
 * Simple query that gets everything `GET /<index-name>/<type-name>/_search`
 * A "field-based query" `GET /<index-name>/<type-name>/_search?q=<field-name>:<value-to-look-for>`
