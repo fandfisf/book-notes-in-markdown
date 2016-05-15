@@ -1,9 +1,9 @@
 # ElasitcSearch
 All credit -  <https://www.elastic.co/guide/en/elasticsearch/guide/current/getting-started.html>
+---
 ## Getting Started
 * ElasticSearch (_ES_) is "Document Oriented". Rather than view the data-world as a collection of giant spread-sheets, ES views it as a collection of _documents_.
 * ES uses __JSON__ as the serialization format for the documents it stores.
-
 ---
 ###Some Definitions
 ##### Index
@@ -12,6 +12,9 @@ A place to store documents, much like an RDBMS
 The act of storing document in a database
 #####_Inverted_ Index
 Have **no idea** what this is yet!
+
+---
+
 ###Remember this
 * By default every field in a document is indexed
 
@@ -23,7 +26,6 @@ Have **no idea** what this is yet!
 * The document lives inside an _index_
 * The index lives inside a _cluster_
 * Standard HTTP verbs are used (`PUT` in this case)
-
 ###Finding data
 * Simple query that gets everything `GET /<index-name>/<type-name>/_search`
 * A "field-based query" `GET /<index-name>/<type-name>/_search?q=<field-name>:<value-to-look-for>`
@@ -99,7 +101,10 @@ GET /megacorp/employee/_search
 }
 ```
 #### Relevance
-The last query above, returns results with **relevance score**. This is very important for full-text searches. Also the results have the search words enclosed in <em> tag.
+The last query above, is remarkable in many counts. It
+1. Returns results with **relevance score**. This is very important for full-text searches.
+1. The results have the search words enclosed in <em> tag.
+1. It matches the entire phrase and not just individual words.
 ```
 "hits": {
   "total": 2,
@@ -112,5 +117,11 @@ The last query above, returns results with **relevance score**. This is very imp
       "_score": 0.16273327,
       "_source": {
         "first_name": "John",
-...
+//... omitted
+      }
+    }
+  ]
+}
 ```
+---
+##Fundamentals
