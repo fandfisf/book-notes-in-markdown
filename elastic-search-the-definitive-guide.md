@@ -3,6 +3,7 @@ All credit -  <https://www.elastic.co/guide/en/elasticsearch/guide/current/getti
 ## Getting Started
 * ElasticSearch (_ES_) is "Document Oriented". Rather than view the data-world as a collection of giant spread-sheets, ES views it as a collection of _documents_.
 * ES uses __JSON__ as the serialization format for the documents it stores.
+
 ---
 ###Some Definitions
 ##### Index
