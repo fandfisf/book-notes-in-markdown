@@ -12,6 +12,13 @@ A place to store documents, much like an RDBMS
 The act of storing document in a database
 #####_Inverted_ Index
 Have **no idea** what this is yet!
+#####Node
+A node is a running instance of Elasticsearch.
+#####Cluster
+One or more nodes that share the same `cluster.name` property.
+#####Master Node
+The node responsible for _admin_ work, but not for data retrival.
+
 
 ---
 
